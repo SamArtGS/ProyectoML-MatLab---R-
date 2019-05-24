@@ -9,4 +9,8 @@ impresionN(X,Y);
 
 [m,n] = size(X);
 theta = zeros((n+1),1);
-[J,grad] = CostoLogistica(theta,X,Y);
+[J, grad] = CostoLogistica(theta,X,Y);
+
+th = 0:pi/100:2*pi;
+
+circle(0,0,J);

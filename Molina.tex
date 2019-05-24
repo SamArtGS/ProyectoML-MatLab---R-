@@ -17,91 +17,22 @@
 \usepackage{url}
 
 \lhead{Facultad de Ingeniería}
-\rhead{Aplicación iOS \& Android}
+\rhead{Tarea 5}
 
 \begin{document}
-\section{Antecedentes}
-La facultad de ingeniería como la institución más importante en México para instruir a los profesionales del mañana, carece de algunos elementos que pueden ayudar los estudiantes y catedráticos a tener elementos académicos de gran importancia al alcance de su mano. La tecnología, como en los últimos años hemos visto crecer exponencialmente, nos permiten desarrollar herramientas que antes carecían de total sentido, pero ahora es posible realizar ciertas tareas con una gran facilidad desde un dispositivo móvil.
-\section{Planteamiento}
-La integración de los dispositivos móviles como celulares y tabletas con nuestro día a día nos abre un mundo de posibilidades para resolver grandes problemáticas a través de éstos aparatos. Es por eso que surge la idea de la creación de una aplicación disponible para sistemas iOS y Android que sea capaz de satisfacer las tareas indispensables como consultar fecha de exámenes, series de ejercicios, información sobre la facultad e inmobiliario, etc.
-\section{Desarrollo}
-Como parte de lograr solucionar esta problemática se ha desarrollado una aplicación nativas para las plataformas iOS y Android que nos permitirá satisfacer las siguientes necesidades:
-\begin{itemize}
-\item Consultar y descargar para ver sin conexión: las series de ejercicios, los programas de estudio, los manuales de práctica, exámenes pasados, la guía escolar y guía de protección de las materias de la División de Ciencias Básicas.
-\item Consultar los horarios y ubicación de taller de ejercicios y asesorías.
-\item Ver la lista de web de profesores.
-\item Tener un calendario escolar adaptativo al dispositivo y de fácil consulta.
-\item Ver información sobre esculturas o elementos de la facultad característicos
-\item Consultar información sobre las carreras impartidas, divisiones, ubicaciones, titulaciones
-\item Mostrar información sobre sitios de interés como bibliotecas, laboratorios, auditorios, asociaciones estudiantiles, esculturas y una pequeña galería.
-\item Punto de enlace para redes sociales oficiales de la facultad
-\end{itemize}
-Por el momento se cuenta ya operando lo mencionado anteriormente en la versión 1.0, además que se plantea en un futuro integrar nuevas características como la consulta de horarios personalizada, envío de notificaciones de clase e integración con plataformas de la FI.
+\section{1.¿Qué es el momento magnético?}
+Puede ser descrito como una cantidad que determina la fuerza que el imán puede ejercer sobre las corrientes eléctricas y el par de un campo magnético.
+\section{¿Qué es un dominio magnético?}
+Región dentro de un material magnético que tiene magnetización uniforme. Lo que quiere dar como significado que hay separaciones entre los campos magnéticos presentes en un material. Cuando se enfría por debajo de una temperatura llamada temperatura de Curie, la magnetización de una pieza de material ferromagnético divide espontáneamente en muchas regiones pequeñas llamadas dominios magnéticos.
+\section{¿Qué es la magnetización?}
+La magnetización es la diferencia entre el campo magnético aplicado y la inducción magnética obtenida.
+\section{¿Qué características posee un material ferromagnético?}
+Pueden imantarse mucho más fácilmente que los demás materiales.
+Tienen una inducción magnética intrínseca máxima muy elevada.
+Se imanan con una facilidad muy diferente según sea el valor del campo magnético.
+Un aumento del campo magnético les origina una variación de flujo diferente de la variación que originaría una disminución igual de campo magnético.
+\section{¿Qué la reluctancia?}
+La reluctancia magnética de un material o circuito magnético es la resistencia que éste posee al paso de un flujo magnético cuando es influenciado por un campo magnético.
 
-\section{Características de la aplicación}
-La aplicación cuenta con 4 temas principales: {\bf Facultad, Recursos, Calendario y Configuración.} Los cuales se encuentran en el Nav Bar de la app. \\
-\begin{itemize}
-\item {\bf Facultad:} Dentro de ésta podremos encontrar elementos pertenecientes a la infraestructura y servicios generales de la facultad, por ejemplo las licenciaturas que se imparten, las divisiones que posee, un mapa, bibliotecas y hasta elementos arquitectónicos a resaltar como el puente de separación del edificio A y B, la leonardita  y muchos más elementos icónicos a manera de imágenes que al tocar muestra una descripción de los mismos. (Ejemplo: Orquesta sinfónica de minería). Posee 2 links a las páginas de la UNAM y de la facultad como escudos de los mismos en la parte superior. La galería será actualizable a los que se inserte a la base de datos en FireBase proporcionado por Google, en todo caso tener un redireccionable para obtener el contenido de la misma.\\
-
-
-\item {\bf Recursos:} Dentro del apartado de recursos tenemos un menú rápido para los elementos que los estudiantes y porfesores pueden necesitar: Series de ejercicios, programas de estudio, horario para asesorías y talleres de ejercicios, conferencias, manuales de prácticas, exámenes pasados y guías de las materias impartidas en la DCB. Además de la colección de los links a los sitios web de los profesores de una manera rápida. Todas las secciones abordadas anteriormente poseen una barra de búsqueda inteligente que permite acceder a cualquier cosa en unos pocos segundos. (Nótese en captura a la derecha)\\
-\includegraphics[width=0.5\textwidth]{Recursos}
-\includegraphics[width=0.5\textwidth]{Busqueda}
-
-Además, un link de acceso al SIAE en la parte superior derecha (Símbolo de examen con A+) que solamente muestra la información de la página oficial.\\ {\bf Cabe destacar que en ningún momento se trata con los datos de los usuarios, la aplicación se limita hasta ahora a ser un acceso rápido a elementos públicos.} (WebView para SIAE).\\ Se plantea en un futuro tener un horario personalizado (esquina superior izquierda, símbolo de pizarra con reloj) que con ayuda de la base de datos, la app sea capaz de mostrar los itinerarios académicos de cada alumno y que mande notificaciones 15 minutos antes de que empiece la próxima clase con la información de: salón, profesor y grupo. \\
-
-\includegraphics[width=0.5\textwidth]{Siae}
-\includegraphics[width=0.5\textwidth]{Serie}
-
-\item {\bf Calendario:} El calendario escolar es uno tal que se adapta a los dispositivos móviles y que con gestos de arraste y toque podemos acceder a los eventos en el ciclo escolar en curso. Se muestran en un color remarcado los eventos, además de un marcado rojo para el día actual. Abajo se encuentra una simbología arrastrable aunque se planea colocar anuncios actualizables que los alumnos y profesores deberían de ver además de envíos de notificación. Si se desea saber el evento en tal día, solo basta con tocar el día y aparecerá una alerta con el evento.\\
-
-\includegraphics[width=0.5\textwidth]{Cal}
-\includegraphics[width=0.5\textwidth]{not}
-
-\item {\bf Configuración:} Dentro del apartado de configuración podemos encontrar información de la app, además de las referencias de todo los elementos utilizados que no nos pertenecen, un enlace a un email para los desarrolladores para escuchar nuevas propuestas a implementar y enlaces a sitios o redes sociales de la universidad. Se plantea la personalización con el cambio del color defecto de la app(rojo) a uno que el usuario desee dentro de las opciones.\\
-
-\includegraphics[width=0.5\textwidth]{config}
-\includegraphics[width=0.5\textwidth]{ss}
-\end{itemize}
-
-\section{Multiplataforma y dispositivos compatibles}
-Conscientes del entorno, la aplicación está disponible para versiones de iOS 9.3 o superior y Android 5.1 o superior. Con esto cubrimos un 85\% de dispositivos en la parte de iOS y un 80.2\% de la parte de Android (1).
-Además de esto, la adaptación a tabletas electrónicas para que igual disfruten del contenido de la aplicación en éstas. \\
-\includegraphics[width=0.5\textwidth]{pin}
-\includegraphics[width=0.5\textwidth]{pin2}
-\includegraphics[width=0.5\textwidth]{pin3}
-\includegraphics[width=0.5\textwidth]{pin4}
-
-\section{Datos de los desarrolladores}
-Los desarrolladores, Jorge Cárdenas Cárdenas (desarrollo Android) y Samuel Arturo Garrido Sánchez (desarrollo iOS) somos estudiantes de la Facultad de Ingeniería que tuvimos la idea de retribuir a nuestra facultad de ésta manera, además que es una manera de ganar experiencia como desarrolladores y tener más conocimiento acerca las necesidades de una población con respecto a éstas implementaciones. Nuestros datos específicos son:
-
-\begin{itemize}
-\item {\bf Samuel Arturo Garrido Sánchez}
-\\  Número de Cuenta: 418046193
-\\  Semestre: 4
-\\  Carrera: Ingeniería en Computación
-\end{itemize}
-
-\begin{itemize}
-\item {\bf Jorge Cárdenas Cárdenas}
-\\  Número de Cuenta: 418049352
-\\  Semestre: 4
-\\  Carrera: Ingeniería en Computación
-\end{itemize}
-
-\section{Semblanza de los desarrolladores}
-\section{Términos de los desarrolladores}
-Como parte del desarrollo de la aplicación se estipula las siguientes condiciones para ser considerado como un proyecto institucional y que se proporcione a través de una plataforma de la Facultad de Ingeniería, además de los compromisos de los desarrolladores para con la aplicación y la facultad:
-\begin{itemize}
-\item El proyecto es ajeno a cualquier campaña política o publicidad que no corresponda únicamente a la difusión académica y cultural dentro de la facultad. No se permitirá publicidad con fines lucrativos o que posean contenido que altere el orden. 
-\item La aplicación es sin fines de lucro y estará disponible en las plataformas de Google Play Store y Apple App Store. 
-\item Se buscará la mejora continua de la aplicación con nuevas herramientas que beneficien a la comunidad.
-\item Las cuentas de desarrollador para publicar y mantener las aplicaciones serán las de los estudiantes en las plataformas de Apple y Google. (Así como la app FacMed se encuentra la en cuenta de desarrollador de Gustavo Barradas Culebro o Música UNAM en la cuenta de Victor Popoca).
-\item Cuando los desarrolladores dejen de pertenecer a la comunidad, pasará a la Facultad como retribución por su enseñanza y puede hacer de ésta lo que sea mejor para la comunidad.
-\item Los desarrolladores piden pertenecer siempre al desarrollo continuo de la misma, siendo consultados para las nuevas implementaciones.
-\item En caso que en un futuro se vincule con la base de datos de la facultad para implementar nuevas herramientas, no se hará uso indebido de la misma y siempre con la supervisión de un elemento de USECAD.
-
-
-\end{itemize}
 
 \end{document}

@@ -9,7 +9,7 @@ coeffs = polyfit(X, Y, 1);
 
 tamanio = length(Y);
 theta = zeros(2,1);
-iteraciones = 1500;
+iteraciones = 1500; 
 
 Alpha = 0.01;
 
