@@ -8,9 +8,18 @@ Y = A(:,3);
 impresionN(X,Y);
 
 [m,n] = size(X);
-theta = zeros((n+1),1);
-[J, grad] = CostoLogistica(theta,X,Y);
+X = MapeoDelFeature(X(:,1), X(:,2));
+lambda = 1;
+theta = zeros(size(X, 2), 1);
 
-th = 0:pi/100:2*pi;
+[J, grad] = CostoLogReg(theta, X, Y, lambda);
+theta = zeros(size(X, 2), 1);
+lambda = 0;
+opciones = optimset('GradObj', 'on', 'MaxIter', 400);
 
-circle(0,0,J);
+
+[thetaO, Jh, banderadeSalida] = fminunc(@(t)(CostoLogReg(t, X, Y)), theta, opciones);
+
+plotDecisionBoundary(thetaO, X, Y);
+hold off
+p = predict(theta, X);
